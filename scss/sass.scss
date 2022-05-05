@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+header {
+    background: rgb(255,128,128);
+    background: linear-gradient(90deg, rgba(255,128,128,1) 0%, rgba(162,82,255,1) 47%, rgba(55,140,255,1) 100%);
+    padding: 50px;
+}
+#Nosotros {
+    margin: 50px;
+    border: solid pink 5px;
+}
+#separar {
+    margin: 10px;
+}
+#redes {
+    margin: 10px;
+    border: salmon solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#redes img {
+    margin: 10px;
+}
+#foot {
+    background-color: #6dbae4;
+    margin-bottom: 0;
+}
+#foot a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(255,128,128);
+    background: linear-gradient(90deg, rgba(255,128,128,1) 0%, rgba(162,82,255,1) 47%, rgba(55,140,255,1) 100%);
+}
+#NosSec {
+    margin: 50px;
+}
+#NosSec h2:hover{
+    color: blueviolet;
+}
+#uno {
+    padding: 10px;
+}
+#titulo {
+    animation-duration: 3s;
+    animation-name: apa;
+    animation-iteration-count: infinite;
+}
+@keyframes apa {
+    0% {
+        color: #ffbef5;
+    }
+    50% {
+        color: #c1c9ff;
+    }
+    100% {
+        opacity: 1;
+        color: #ddb3ff;
+    }
+}
