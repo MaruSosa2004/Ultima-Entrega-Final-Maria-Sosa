@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
+@import "Animaciones";
+
 header {
     background: rgb(255,128,128);
     background: linear-gradient(90deg, rgba(255,128,128,1) 0%, rgba(162,82,255,1) 47%, rgba(55,140,255,1) 100%);
@@ -15,55 +14,108 @@ header {
 #Nosotros {
     margin: 50px;
     border: solid pink 5px;
+    article{
+        h1 {
+        font-size: 50px;
+        }
+    }
 }
-#separar {
-    margin: 10px;
+#card1 {
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+    img{
+        width: 30%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: calc(0.25rem - 1px);
+    }
+    .card-body {
+        .card-title{
+            font-size: 50px;
+            margin: 10px;
+        }
+        .card-text {
+            font-size: 20px;
+            margin: 10px;
+        }
+    }
 }
-#redes {
-    margin: 10px;
-    border: salmon solid 1px;
+#box {
+    margin: 50px;
+    height: 100px;
+    border: rgb(243, 43, 43) solid 1px;
     border-radius: 10px;
     padding: 10px;
-}
-#redes img {
-    margin: 10px;
+    text-align: center;
 }
 #foot {
     background-color: #6dbae4;
     margin-bottom: 0;
-}
-#foot a {
+    a{
     text-decoration: none;
-    color: black;
-}
-footer a:hover{
-    color: rgb(255, 255, 255);
-    background: rgb(255,128,128);
-    background: linear-gradient(90deg, rgba(255,128,128,1) 0%, rgba(162,82,255,1) 47%, rgba(55,140,255,1) 100%);
+    color: black;   
+        &:hover {
+            color: rgb(255, 255, 255);
+            background: rgb(255,128,128);
+            background: linear-gradient(90deg, rgba(255,128,128,1) 0%, rgba(162,82,255,1) 47%, rgba(55,140,255,1) 100%);
+        }
+    }
 }
 #NosSec {
     margin: 50px;
+    h2 {
+        &:hover{
+            color: #6dbae4;
+        }
+    }
 }
-#NosSec h2:hover{
-    color: blueviolet;
-}
+
 #uno {
     padding: 10px;
 }
-#titulo {
-    animation-duration: 3s;
-    animation-name: apa;
-    animation-iteration-count: infinite;
+#card5 {
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+    img{
+        width: 30%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: calc(0.25rem - 1px);
+      }
+    .card-body{
+        .card-title{
+            font-weight: bold;
+        }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    a {
+      display: none;
+    }
+    .card-body {
+      padding: 0.5em 1.2em;
+    }
+    .card-body .card-text {
+      margin: 0;
+    }
+    .card img {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .card img {
+      width: 40%;
+    }
+  }
+
+#header4 {
+    background-color: #ddb3ff;
+    margin-top: 20px;
 }
-@keyframes apa {
-    0% {
-        color: #ffbef5;
-    }
-    50% {
-        color: #c1c9ff;
-    }
-    100% {
-        opacity: 1;
-        color: #ddb3ff;
-    }
+#Albumm {
+        height:auto;
+        word-wrap: break-word;
+}
+#card5 {
+    margin: 30px;
 }

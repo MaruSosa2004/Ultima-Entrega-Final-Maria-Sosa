@@ -1,0 +1,242 @@
+$morado: #e7c7f7;
+
+#titulo {
+    animation-duration: 3s;
+    animation-name: apa;
+    animation-iteration-count: infinite;
+}
+@keyframes apa {
+    0% {
+        color: #ffbef5;
+    }
+    50% {
+        color: #c1c9ff;
+    }
+    100% {
+        opacity: 1;
+        color: #ddb3ff;
+    }
+}
+#titulo2 {
+    @extend #titulo;
+}
+#titulo3 {
+    @extend #titulo;
+}
+#titulo4 {
+    @extend #titulo;
+}
+#titulo5 {
+    @extend #titulo;
+}
+
+#Nosotros {
+    article{
+        animation: myAnim6 2s ease 0s 1 reverse none;
+        @keyframes myAnim6 {
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+        
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
+        h1{
+            text-transform: uppercase; 
+            background-image: linear-gradient(to right, #e429cb, #f79d00, #4e9ae6, #64f38c);
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            color: transparent;
+
+            background-size: 300%;
+            background-position: -100%;  
+
+            animation: animatedText 5s infinite alternate-reverse;
+            @keyframes animatedText{
+            to{
+                background-position: 100%; 
+            }
+            }
+        }
+    }
+}
+#card1 {
+    img{
+        &:hover {
+            animation: Ani3 1s ease 0s 1 normal forwards;
+
+            @keyframes Ani3 {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                    transform: scale(1) translateX(0) translateY(0);
+                }
+            
+                100% {
+                    box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+                    transform: scale(1.1) translateX(12px) translateY(-12px);
+                }
+            }
+
+        }
+    }
+    div{
+        h5{
+
+            text-transform: uppercase; 
+            background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            color: transparent;
+            
+            background-size: 300%;
+            background-position: -100%;  
+            
+            animation: animatedText 5s infinite alternate-reverse;
+            
+            @keyframes animatedText{
+            to{
+                background-position: 100%; 
+            }
+            }
+        }
+        a {
+            &:hover {
+                background: linear-gradient(247deg, #f768ff, #a168ff, #4c5fff);
+                background-size: 600% 600%;
+            
+                -webkit-animation: Ani4 3s ease infinite;
+                -moz-animation: Ani4 3s ease infinite;
+                animation: Ani4 3s ease infinite;
+            
+            @-webkit-keyframes Ani4 {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @-moz-keyframes Ani4 {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @keyframes Ani4 {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            }
+        }
+    }
+}
+
+#header4 { 
+    animation: Ani1 2s ease 0s infinite normal forwards;
+
+    @keyframes Ani1 {
+        100% {
+            transform: translateY(0);
+        }
+        70% {
+            transform: translateY(-8px);
+        }
+        60% {
+            transform: translateY(8px);
+        }
+
+        80% {
+            transform: translateY(6.4px);
+        }
+
+        90% {
+            transform: translateY(-6.4px);
+        }
+        }
+}
+#cont4 {
+    img {
+        &:hover {
+        animation: Ani2 1s ease 0s infinite normal forwards;
+
+        @keyframes Ani2 {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+        
+            100% {
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            }
+            }
+        }
+    }
+}
+
+#card5 {
+    img{
+        &:hover {
+            animation: Ani3 1s ease 0s 1 normal forwards;
+
+            @keyframes Ani3 {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                    transform: scale(1) translateX(0) translateY(0);
+                }
+            
+                100% {
+                    box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+                    transform: scale(1.1) translateX(12px) translateY(-12px);
+                }
+            }
+
+        }
+    }
+    div{
+        h5{
+
+            text-transform: uppercase; 
+            background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            color: transparent;
+            
+            background-size: 300%;
+            background-position: -100%;  
+            
+            animation: animatedText 5s infinite alternate-reverse;
+            
+            @keyframes animatedText{
+            to{
+                background-position: 100%; 
+            }
+            }
+        }
+        a {
+            &:hover {
+                background: linear-gradient(247deg, #f768ff, #a168ff, #4c5fff);
+                background-size: 600% 600%;
+            
+                -webkit-animation: Ani4 3s ease infinite;
+                -moz-animation: Ani4 3s ease infinite;
+                animation: Ani4 3s ease infinite;
+            
+            @-webkit-keyframes Ani4 {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @-moz-keyframes Ani4 {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @keyframes Ani4 {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            }
+        }
+    }
+}
