@@ -1,20 +1,26 @@
 $morado: #e7c7f7;
 
 #titulo {
+    h1{
+        a{
+            text-decoration: none;
+            font-size: 100px;
+        }
+    }
     animation-duration: 3s;
     animation-name: apa;
     animation-iteration-count: infinite;
-}
-@keyframes apa {
-    0% {
-        color: #ffbef5;
-    }
-    50% {
-        color: #c1c9ff;
-    }
-    100% {
-        opacity: 1;
-        color: #ddb3ff;
+    @keyframes apa {
+        0% {
+            color: #ffbef5;
+        }
+        50% {
+            color: #c1c9ff;
+        }
+        100% {
+            opacity: 1;
+            color: #ddb3ff;
+        }
     }
 }
 #titulo2 {
@@ -33,17 +39,17 @@ $morado: #e7c7f7;
 #Nosotros {
     article{
         animation: myAnim6 2s ease 0s 1 reverse none;
+
         @keyframes myAnim6 {
-            0%,
-            50%,
+
             100% {
                 opacity: 1;
             }
         
-            25%,
             75% {
                 opacity: 0;
             }
+
         }
         h1{
             text-transform: uppercase; 
@@ -56,6 +62,7 @@ $morado: #e7c7f7;
             background-position: -100%;  
 
             animation: animatedText 5s infinite alternate-reverse;
+
             @keyframes animatedText{
             to{
                 background-position: 100%; 
@@ -171,6 +178,32 @@ $morado: #e7c7f7;
             }
         }
     }
+    a {
+        &:hover {
+            background: linear-gradient(247deg, #68ff89, #a183d4, #3d50fa);
+            background-size: 600% 600%;
+        
+            -webkit-animation: Ani4 3s ease infinite;
+            -moz-animation: Ani4 3s ease infinite;
+            animation: Ani4 3s ease infinite;
+        
+        @-webkit-keyframes Ani4 {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes Ani4 {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes Ani4 {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        }
+    }
 }
 
 #card5 {
@@ -236,6 +269,121 @@ $morado: #e7c7f7;
                 50%{background-position:100% 50%}
                 100%{background-position:0% 50%}
             }
+            }
+        }
+    }
+}
+
+#accor1{
+        background: linear-gradient(87deg, #87f9dc, #87adf9, #bc87f9, #f987dc, #ecf987);
+        background-size: 1000% 1000%;
+
+        -webkit-animation: apa1 6s ease infinite;
+        -moz-animation: apa1 6s ease infinite;
+        animation: apa1 6s ease infinite;
+
+        @-webkit-keyframes apa1 {
+            0%{background-position:0% 48%}
+            50%{background-position:100% 53%}
+            100%{background-position:0% 48%}
+        }
+        @-moz-keyframes apa1 {
+            0%{background-position:0% 48%}
+            50%{background-position:100% 53%}
+            100%{background-position:0% 48%}
+        }
+        @keyframes apa1 {
+            0%{background-position:0% 48%}
+            50%{background-position:100% 53%}
+            100%{background-position:0% 48%}
+        }
+
+    button {
+        background-color: #f0dfff;
+        &:hover {
+            animation-duration: 3s;
+            animation-name: apa6;
+            animation-iteration-count: infinite;
+
+        @keyframes apa6 {
+            0% {
+            color: #ff94ef;
+            }
+            50% {
+                color: #556bff;
+            }
+            75% {
+                color: #68ff89;
+            }
+            100% {
+                opacity: 1;
+                color: #ad49ff;
+            }
+            } 
+        }
+    }
+}
+
+#accor2 {
+    @extend #accor1;
+}
+#accor3 {
+    @extend #accor1;
+}
+#accor4 {
+    @extend #accor1;
+}
+
+#foot {
+    #grup{
+        p{
+            &:hover {
+                animation-duration: 2s;
+                animation-name: apa9;
+                animation-iteration-count: infinite;
+                text-decoration: underline;
+    
+            @keyframes apa9 {
+                0% {
+                color: #fa78e6;
+                }
+                50% {
+                    color: #556bff;
+                }
+                75% {
+                    color: #f5ff68;
+                }
+                100% {
+                    opacity: 1;
+                    color: #992df1;
+                }
+                } 
+            }
+        }
+    }
+    #nov {
+        p{
+            &:hover {
+                animation-duration: 3s;
+                animation-name: apa99;
+                animation-iteration-count: infinite;
+                text-decoration: underline;
+    
+            @keyframes apa99 {
+                0% {
+                color: #ff94ef;
+                }
+                50% {
+                    color: #556bff;
+                }
+                75% {
+                    color: #51ff77;
+                }
+                100% {
+                    opacity: 1;
+                    color: #ffd549;
+                }
+                } 
             }
         }
     }

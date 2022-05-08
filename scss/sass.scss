@@ -11,6 +11,23 @@ header {
     background: linear-gradient(90deg, rgba(255,128,128,1) 0%, rgba(162,82,255,1) 47%, rgba(55,140,255,1) 100%);
     padding: 50px;
 }
+
+#navo {
+    box-shadow: 0px 10px 10px -15px black;
+}
+#navo2 {
+    @extend #navo;
+}
+#navo3 {
+    @extend #navo;
+}
+#navo4 {
+    @extend #navo;
+}
+#navo5 {
+    @extend #navo;
+}
+
 #Nosotros {
     margin: 50px;
     border: solid pink 5px;
@@ -40,25 +57,14 @@ header {
         }
     }
 }
-#box {
-    margin: 50px;
-    height: 100px;
-    border: rgb(243, 43, 43) solid 1px;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
+
 #foot {
-    background-color: #6dbae4;
+    background-color: #494b4d;
     margin-bottom: 0;
+    color: rgb(255, 255, 255);
     a{
     text-decoration: none;
-    color: black;   
-        &:hover {
-            color: rgb(255, 255, 255);
-            background: rgb(255,128,128);
-            background: linear-gradient(90deg, rgba(255,128,128,1) 0%, rgba(162,82,255,1) 47%, rgba(55,140,255,1) 100%);
-        }
+    color: rgb(255, 255, 255);   
     }
 }
 #NosSec {
@@ -116,6 +122,15 @@ header {
         height:auto;
         word-wrap: break-word;
 }
-#card5 {
+
+#Accor {
     margin: 30px;
+    #accor1{
+        button {
+            background-color: #f0dfff;
+            &:hover {
+                
+            }
+        }
+    }
 }

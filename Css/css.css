@@ -10,7 +10,10 @@
   animation-name: apa;
   animation-iteration-count: infinite;
 }
-
+#titulo h1 a, #titulo5 h1 a, #titulo4 h1 a, #titulo3 h1 a, #titulo2 h1 a {
+  text-decoration: none;
+  font-size: 100px;
+}
 @keyframes apa {
   0% {
     color: #ffbef5;
@@ -23,14 +26,15 @@
     color: #ddb3ff;
   }
 }
+
 #Nosotros article {
   animation: myAnim6 2s ease 0s 1 reverse none;
 }
 @keyframes myAnim6 {
-  0%, 50%, 100% {
+  100% {
     opacity: 1;
   }
-  25%, 75% {
+  75% {
     opacity: 0;
   }
 }
@@ -151,6 +155,46 @@
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
+#cont4 a:hover {
+  background: linear-gradient(247deg, #68ff89, #a183d4, #3d50fa);
+  background-size: 600% 600%;
+  -webkit-animation: Ani4 3s ease infinite;
+  -moz-animation: Ani4 3s ease infinite;
+  animation: Ani4 3s ease infinite;
+}
+@-webkit-keyframes Ani4 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Ani4 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Ani4 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 #card5 img:hover {
   animation: Ani3 1s ease 0s 1 normal forwards;
@@ -221,10 +265,121 @@
   }
 }
 
+#accor1, #accor4, #accor3, #accor2 {
+  background: linear-gradient(87deg, #87f9dc, #87adf9, #bc87f9, #f987dc, #ecf987);
+  background-size: 1000% 1000%;
+  -webkit-animation: apa1 6s ease infinite;
+  -moz-animation: apa1 6s ease infinite;
+  animation: apa1 6s ease infinite;
+}
+@-webkit-keyframes apa1 {
+  0% {
+    background-position: 0% 48%;
+  }
+  50% {
+    background-position: 100% 53%;
+  }
+  100% {
+    background-position: 0% 48%;
+  }
+}
+@-moz-keyframes apa1 {
+  0% {
+    background-position: 0% 48%;
+  }
+  50% {
+    background-position: 100% 53%;
+  }
+  100% {
+    background-position: 0% 48%;
+  }
+}
+@keyframes apa1 {
+  0% {
+    background-position: 0% 48%;
+  }
+  50% {
+    background-position: 100% 53%;
+  }
+  100% {
+    background-position: 0% 48%;
+  }
+}
+#accor1 button, #accor4 button, #accor3 button, #accor2 button {
+  background-color: #f0dfff;
+}
+#accor1 button:hover, #accor4 button:hover, #accor3 button:hover, #accor2 button:hover {
+  animation-duration: 3s;
+  animation-name: apa6;
+  animation-iteration-count: infinite;
+}
+@keyframes apa6 {
+  0% {
+    color: #ff94ef;
+  }
+  50% {
+    color: #556bff;
+  }
+  75% {
+    color: #68ff89;
+  }
+  100% {
+    opacity: 1;
+    color: #ad49ff;
+  }
+}
+
+#foot #grup p:hover {
+  animation-duration: 2s;
+  animation-name: apa9;
+  animation-iteration-count: infinite;
+  text-decoration: underline;
+}
+@keyframes apa9 {
+  0% {
+    color: #fa78e6;
+  }
+  50% {
+    color: #556bff;
+  }
+  75% {
+    color: #f5ff68;
+  }
+  100% {
+    opacity: 1;
+    color: #992df1;
+  }
+}
+#foot #nov p:hover {
+  animation-duration: 3s;
+  animation-name: apa99;
+  animation-iteration-count: infinite;
+  text-decoration: underline;
+}
+@keyframes apa99 {
+  0% {
+    color: #ff94ef;
+  }
+  50% {
+    color: #556bff;
+  }
+  75% {
+    color: #51ff77;
+  }
+  100% {
+    opacity: 1;
+    color: #ffd549;
+  }
+}
+
 header {
   background: rgb(255, 128, 128);
   background: linear-gradient(90deg, rgb(255, 128, 128) 0%, rgb(162, 82, 255) 47%, rgb(55, 140, 255) 100%);
   padding: 50px;
+}
+
+#navo, #navo5, #navo4, #navo3, #navo2 {
+  box-shadow: 0px 10px 10px -15px black;
 }
 
 #Nosotros {
@@ -254,27 +409,14 @@ header {
   margin: 10px;
 }
 
-#box {
-  margin: 50px;
-  height: 100px;
-  border: rgb(243, 43, 43) solid 1px;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-}
-
 #foot {
-  background-color: #6dbae4;
+  background-color: #494b4d;
   margin-bottom: 0;
+  color: rgb(255, 255, 255);
 }
 #foot a {
   text-decoration: none;
-  color: black;
-}
-#foot a:hover {
   color: rgb(255, 255, 255);
-  background: rgb(255, 128, 128);
-  background: linear-gradient(90deg, rgb(255, 128, 128) 0%, rgb(162, 82, 255) 47%, rgb(55, 140, 255) 100%);
 }
 
 #NosSec {
@@ -334,8 +476,11 @@ header {
   word-wrap: break-word;
 }
 
-#card5 {
+#Accor {
   margin: 30px;
+}
+#Accor #accor1 button, #Accor #accor2 button, #Accor #accor3 button, #Accor #accor4 button {
+  background-color: #f0dfff;
 }
 
 /*# sourceMappingURL=css.css.map */

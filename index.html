@@ -15,31 +15,33 @@
         <header>
             <h1 id="titulo">Euphoria</h1>
         </header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="Paginas/Nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      productos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="Paginas/Photocard.html">Photocards</a></li>
-                      <li><a class="dropdown-item" href="Paginas/Album.html">Albums</a></li>
-                      <li><a class="dropdown-item" href="Paginas/Productos.html">Novedades</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navo">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="paginas/Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="paginas/Photocard.html">Photocards</a></li>
+                    <li><a class="dropdown-item" href="paginas/Album.html">Albums</a></li>
+                    <li><a class="dropdown-item" href="paginas/Productos.html">Novedades</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
         <main>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -134,19 +136,95 @@
               </div>
             </div>    
             </section>
-            <div id="box">
-              <div class="social-container">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-codepen"></i></a></li>
-                </ul>
-            </div>
         </main>
         <footer id="foot" class="mt-auto">
-            <h3 class="h6">Copyright © 2022 sitio desarrollado por Maru</h3>
-            <a href = "mailto: marusosa2004@gmail.com">Enviar mail</a>
+            <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" id="redsoc">
+            <div class="me-5 d-none d-lg-block">
+              <span>Encuentranos en nuestras redes sociales!:</span>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/" class="me-4 text-reset">
+                <i class="fab fa-facebook-f">
+                  <img src="https://cdn.exclaimer.com/Handbook%20Images/facebook-icon_16x16.png?_ga=2.96874711.937940511.1652046385-1500181311.1652046385">
+                </i>
+              </a>
+              <a href="https://twitter.com/?lang=es" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+                <img src="https://cdn.exclaimer.com/Handbook%20Images/twitter-icon_16x16.png?_ga=2.36397032.937940511.1652046385-1500181311.1652046385">
+              </a>
+              <a href="https://www.youtube.com/watch?v=kHPm_AlxP7U" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+                <img src="https://cdn.exclaimer.com/Handbook%20Images/youtube-icon_16x16.png">
+              </a>
+              <a href="https://www.instagram.com/" class="me-4 text-reset">
+                <i class="fab fa-instagram">
+                  <img src="https://cdn.exclaimer.com/Handbook%20Images/instagram-icon_16x16.png?_ga=2.36397032.937940511.1652046385-1500181311.1652046385">
+                </i>
+              </a>
+            </div>
+          </section>
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>
+                    Euphoria
+                  </h6>
+                  <p>
+                    Encuentra los productos originales de tus grupos favoritos en nuestra pagina!
+                  </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" id="grup">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Grupos
+                  </h6>
+                  <p>
+                    <a href="Paginas/Album.html" class="text-reset">BTS</a>
+                  </p>
+                  <p>
+                    <a href="Paginas/Album.html" class="text-reset">TXT</a>
+                  </p>
+                  <p>
+                    <a href="Paginas/Album.html" class="text-reset">TWICE</a>
+                  </p>
+                  <p>
+                    <a href="Paginas/Album.html" class="text-reset">STRAY KIDS</a>
+                  </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="nov">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Novedades
+                  </h6>
+                  <p>
+                    <a href="Paginas/Productos.html" class="text-reset">Mamamoo</a>
+                  </p>
+                  <p>
+                    <a href="Paginas/Productos.html" class="text-reset">Cherry Bullet</a>
+                  </p>
+                  <p>
+                    <a href="Paginas/Productos.html" class="text-reset">Itzy</a>
+                  </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Contacto
+                  </h6>
+                  <p><i class="fas fa-home me-3"></i> Buenos Aires, Arg</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    marusosa2004@gmail.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 11 234 587 88</p>
+                  <p><i class="fas fa-print me-3"></i> + 24 254 567 89</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright: Maru
+      </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     </body>
